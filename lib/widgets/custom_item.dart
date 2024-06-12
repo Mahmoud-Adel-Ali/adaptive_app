@@ -7,10 +7,13 @@ class CustomItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: const Color(0xffB4B4B4),
-        borderRadius: BorderRadius.circular(8),
+    return AspectRatio(
+      aspectRatio: 1,
+      child: Container(
+        decoration: BoxDecoration(
+          color: const Color(0xffB4B4B4),
+          borderRadius: BorderRadius.circular(8),
+        ),
       ),
     );
   }

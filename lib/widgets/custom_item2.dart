@@ -9,7 +9,7 @@ class CustomItem2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.only(top: 16),
-      height: 75,
+      height: 60,
       decoration: BoxDecoration(
           color: const Color(0xffECECEC),
           borderRadius: BorderRadius.circular(8)),

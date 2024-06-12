@@ -6,31 +6,31 @@ class CustomDrawerItemsListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      shrinkWrap: true,
-      physics: const NeverScrollableScrollPhysics(),
-      children: [
-        CustomDrawerItem(
-          onTap: () {},
-          title: 'DASHBOARD',
-          icon: Icons.home,
-        ),
-        CustomDrawerItem(
-          onTap: () {},
-          title: 'SETTINGS',
-          icon: Icons.settings,
-        ),
-        CustomDrawerItem(
-          onTap: () {},
-          title: 'ABOUT',
-          icon: Icons.info,
-        ),
-        CustomDrawerItem(
-          onTap: () {},
-          title: 'LOGOUT',
-          icon: Icons.logout,
-        ),
-      ],
+    return Expanded(
+      child: ListView(
+        children: [
+          CustomDrawerItem(
+            onTap: () {},
+            title: 'DASHBOARD',
+            icon: Icons.home,
+          ),
+          CustomDrawerItem(
+            onTap: () {},
+            title: 'SETTINGS',
+            icon: Icons.settings,
+          ),
+          CustomDrawerItem(
+            onTap: () {},
+            title: 'ABOUT',
+            icon: Icons.info,
+          ),
+          CustomDrawerItem(
+            onTap: () {},
+            title: 'LOGOUT',
+            icon: Icons.logout,
+          ),
+        ],
+      ),
     );
   }
 }

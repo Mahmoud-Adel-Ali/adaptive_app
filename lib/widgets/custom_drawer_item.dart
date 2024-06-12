@@ -15,8 +15,10 @@ class CustomDrawerItem extends StatelessWidget {
         child: ListTile(
           title: Text(
             title,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
             style: const TextStyle(
-              letterSpacing: 2,
+              letterSpacing: 3,
               fontSize: 22,
               color: Colors.black,
               fontWeight: FontWeight.w500

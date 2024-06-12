@@ -10,12 +10,12 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.only(left: 16, right: 16, top: 4, bottom: 4),
+    return Padding(
+      padding: const EdgeInsets.only(left: 16, right: 16, top: 4, bottom: 4),
       child: AdaptiveLayoutWidget(
-        desktopLayout: DesktopLayout(),
-        tabletLayout: TabletLayout(),
-        mobileLayout: MobileLayout(),
+        desktopLayout:(context) => const DesktopLayout(),
+        tabletLayout:(context) => const TabletLayout(),
+        mobileLayout:(context) => const MobileLayout(),
       ),
     );
   }

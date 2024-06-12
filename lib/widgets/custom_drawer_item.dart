@@ -13,15 +13,17 @@ class CustomDrawerItem extends StatelessWidget {
       child: InkWell(
         onTap: onTap,
         child: ListTile(
-          title: Text(
-            title,
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
-            style: const TextStyle(
-              letterSpacing: 3,
-              fontSize: 22,
-              color: Colors.black,
-              fontWeight: FontWeight.w500
+          title: FittedBox(
+            fit: BoxFit.scaleDown,
+            alignment: Alignment.centerLeft,
+            child: Text(
+              title,
+              style: const TextStyle(
+                letterSpacing: 3,
+                fontSize: 22,
+                color: Colors.black,
+                fontWeight: FontWeight.w500
+              ),
             ),
           ),
           leading: Icon(
